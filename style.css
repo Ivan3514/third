@@ -6,4 +6,9 @@ color: #FFFFFF;
 background: #333333;  
 }
 
-background-color:#FFFF00;
+#demo {
+background: #000000;
+background: -moz-linear-gradient(left, #000000 0%, #6F6E16 50%, #FFFB44 100%);
+background: -webkit-linear-gradient(left, #000000 0%, #6F6E16 50%, #FFFB44 100%);
+background: linear-gradient(to right, #000000 0%, #6F6E16 50%, #FFFB44 100%);
+}

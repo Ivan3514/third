@@ -41,7 +41,7 @@ background-color:RoyalBlue;
         display: block;
       }
 
-div {
+div1 {
     width: 100px;
     height: 100px;
     background: red;
@@ -49,4 +49,4 @@ div {
     transition: width 2s;
 }
 
-#div1{transition-timing-function: ease-in-out;}
+#div2 {transition-timing-function: ease-in-out;}

@@ -41,7 +41,7 @@ background-color:RoyalBlue;
         display: block;
       }
 
-div1 {
+#transition {
     width: 100px;
     height: 100px;
     background: red;

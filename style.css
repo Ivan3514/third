@@ -40,3 +40,12 @@ background-color:RoyalBlue;
         border-left: 5px solid #33ADFF;
         display: block;
       }
+
+transition: margin-left 4s ease-in-out 1s;
+transition:
+  margin-left 4s,
+  color 1s;
+transition: all 0.5s ease-out;
+transition: inherit;
+transition: initial;
+transition: unset;

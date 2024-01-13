@@ -41,13 +41,13 @@ background-color:RoyalBlue;
         display: block;
       }
 
-div1 {
+div:hover {
     width: 100px;
     height: 100px;
     background: red;
     -webkit-transition: width 2s; 
     transition: width 2s;
 }
-#div2 {transition-timing-function: ease-in-out;}
+#div1 {transition-timing-function: ease-in-out;}
 
 

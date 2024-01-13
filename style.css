@@ -49,4 +49,4 @@ div {
     transition: width 2s;
 }
 
-#div2 {transition-timing-function: ease-in-out;}
+#div1{transition-timing-function: ease-in-out;}

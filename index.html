@@ -23,7 +23,31 @@
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 400" width="200" height="200">
   <rect x="80" y="60" width="250" height="250" rx="20" style="fill:red; stroke:black; fill-opacity:0.7" />
   <rect x="180" y="110" width="250" height="250" rx="40" style="fill:blue; stroke:black; fill-opacity:0.5;" />
-  </svg>  
+  </svg> 
+    <p>Переместите мышь для увеличения ширины:</p>
+<div style="background: orange; width: 60px; height: 20px">
+</div>
+<script>
+var lastX; // Последняя позиция мыши
+var rect = document.querySelector("div");
+rect.addEventListener("mousedown", function(event) {
+if (event.which == 1) {
+lastX = event.pageX;
+addEventListener("mousemove", moved);
+event.preventDefault(); // Запретим выделение
+}
+});
+function moved(event) {
+if (event.which != 1) {
+removeEventListener("mousemove", moved);
+} else {
+var dist = event.pageX - lastX;
+var newWidth = Math.max(10, rect.offsetWidth + dist);
+rect.style.width = newWidth + "px";
+lastX = event.pageX;
+}
+}
+</script>
 <h1>что с гитхабом не так</h1>
 <h2><div id="demoFont">Незнаю</div></h2> 
 <ul>
